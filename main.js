@@ -11,8 +11,8 @@ function addTodo(){
     <span class="todo-text">${inputJs.value}</span>
 
     <div class="actions">
-      <span class="complete-btn action">✅</span>
-      <span class="delete-btn action" onclick="this.parentElement.parentElement.remove()">🗑️</span>
+      <span class="complete-btn action">Completed</span>
+      <span class="delete-btn action" onclick="this.parentElement.parentElement.remove()">Delete</span>
     </div>
   `;
 
@@ -24,7 +24,7 @@ function addTodo(){
     if (text.style.textDecoration === "line-through") {
       text.style.textDecoration = "none";
       btn.style.opacity = "1";
-      btn.textContent = "✅";
+      btn.textContent = "Completed";
       btn.style.fontSize = "1rem";    
     } else {
       text.style.textDecoration = "line-through";
