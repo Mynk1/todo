@@ -29,7 +29,7 @@ function addTodo(){
     } else {
       text.style.textDecoration = "line-through";
       btn.style.opacity = "0.5";
-      btn.style.fontSize = "1.3rem";      
+      btn.style.fontSize = "1.2rem";      
       btn.textContent = "↺";
     }
   };
